@@ -1,0 +1,146 @@
+.box {
+	width: 100%;
+
+	&.gray {
+		background-color: #efefef;
+	}
+
+	&.white {
+		background-color: #fff;
+	}
+}
+
+.description-container {
+	padding: 48px 24px;
+	margin-left: 0 !important;
+}
+
+.item-details-card {
+	background-color: #fff;
+	width: 100%;
+	padding: 24px;
+}
+
+.item-details-container {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 24px;
+
+	@media (max-width: 880px) {
+		flex-direction: column;
+	}
+}
+
+.list-img {
+	height: 1rem;
+	min-width: 14px;
+	padding: 0 6px;
+}
+
+.add-icon {
+	fill: #fff;
+	color: #fff;
+}
+
+.add-to-cart-btn {
+	background-color: #e14f43 !important;
+	color: #fff !important;
+	min-width: fit-content !important;
+}
+
+.navbar-icon {
+	height: 24px;
+
+	&.cart {
+		padding-left: 24px;
+	}
+
+	&.left {
+		padding-right: 12px;
+	}
+}
+
+& .MuiBadge-badge {
+	border: 1px solid white;
+	height: 16px !important;
+	width: 16px;
+	min-width: unset !important;
+}
+
+.gallery-img {
+	border: 1px solid #efefef;
+}
+
+.item-container {
+	display: flex !important;
+	padding: 48px 24px;
+	margin-left: 0 !important;
+	column-gap: 1.5rem;
+
+	@media (max-width: 880px) {
+		flex-direction: column;
+	}
+}
+
+.pce-input {
+	border-radius: 0;
+
+	& .MuiOutlinedInput-root {
+		border-radius: 0 !important;
+		width: 4rem;
+
+		input {
+			padding: 8px;
+			text-align: end;
+		}
+
+		input[type="number"]::-webkit-inner-spin-button,
+		input[type="number"]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}
+
+.discount-img {
+	height: 1rem;
+	vertical-align: text-bottom;
+}
+
+@keyframes drop {
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(24px);
+	}
+	66% {
+		transform: translateX(-24px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.animation-drop {
+	animation: drop 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.animate-slide-top {
+	animation: flip-vertical-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes flip-vertical-right {
+	0% {
+		-webkit-transform: rotateY(0);
+		transform: rotateY(0);
+	}
+	50% {
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+	100% {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}

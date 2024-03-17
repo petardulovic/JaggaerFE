@@ -1,0 +1,2 @@
+https://3body-net.medium.com/how-to-add-webpack-to-an-auto-created-react-app-343af404986e
+https://medium.com/@ns-tech-learn/how-to-install-webpack-and-configure-in-react-js-88b4b0bd0af9
