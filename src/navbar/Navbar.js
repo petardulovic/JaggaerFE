@@ -57,6 +57,8 @@ export default function Navbar(props) {
 	});
 
 	useEffect(() => {
+		//in order not to prop-drill we will add a listener, useEffect would be almost the same using the same block from if, 
+		//but would trigger on dependency change when props change, or from global store if it existed
 		function clickHandler(e) {
 			if (e.target.id === "add-item-action" && !animate) {
 				setAnimate(true);
@@ -99,7 +101,6 @@ export default function Navbar(props) {
 							/>
 							<img className="navbar-icon left" src={Facts} />
 						</Box>
-
 						<Divider orientation="vertical" flexItem color="#EFEFEF" />
 						<Badge
 							className={animate ? "animation-drop" : ""}

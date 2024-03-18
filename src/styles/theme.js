@@ -38,7 +38,7 @@ const theme = createTheme({
 			fontSize: "1.20rem",
 			color: palette.grayText.main,
 		},
-	}),
+	}),	
 });
 
 export default theme;

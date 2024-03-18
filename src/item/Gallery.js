@@ -23,9 +23,10 @@ export const Gallery = () => {
 				direction={"column"}
 				display={"flex"}
 				justifyContent={"space-between"}>
-				{images.map((img) => (
-					<img className="gallery-img" src={Package} />
-				))}
+				{images.map(
+					(img, i) =>
+						i <= 2 && <img key={img} className="gallery-img" src={Package} />
+				)}
 			</Grid>
 			<Grid item xs={9} alignSelf={"end"}>
 				<ImageListItem key={images[0]} sx={{ border: "1px solid #efefef" }}>

@@ -1,15 +1,13 @@
 import React from "react";
-import { Item } from "../item/Item";
 import { Description } from "../description/Description";
-import { Box } from "@mui/material";
 import Navbar from "../navbar/Navbar";
-import { Item2 } from "../item/Item2";
+import { Item } from "../item/Item";
 
 export const Page = () => {
 	return (
 		<>
 			<Navbar />
-			<Item2 />
+			<Item />
 			<Description />
 		</>
 	);
